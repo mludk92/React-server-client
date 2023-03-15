@@ -6,14 +6,6 @@ import axios from 'axios'
 
 function CreatureList() {
     const [listOfCreatures, setListofCreatures]= useState([
-        {
-            name: 'Unicorn',
-            origin: 'Norway'
-        }
-        ,{
-            name:'Hodag',
-            origin:'Wisconsin, USA'
-        }
     ])
     // All Components return what you want them to display
 //GET
