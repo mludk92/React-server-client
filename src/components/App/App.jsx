@@ -1,7 +1,11 @@
 // Source in our stylesheet
+
+// start with npm run client 
+
 import './App.css';
 // useState updates DOM when a variable changes
 import {useState} from 'react'
+import CreatureList from '../CreatureList/CreatureList.jsx'
 
 
 
@@ -19,6 +23,7 @@ let increaseClickCounter = () =>{
 let decreaseClickCounter = () => {
   setCounter(counter - 1)
 }
+
   return (
     // This looks like HTML but is really JSX
     <div>
@@ -29,6 +34,8 @@ let decreaseClickCounter = () => {
       <p>You clicked {counter} Times</p>
       <button onClick={increaseClickCounter}>Increase</button>
       <button onClick={decreaseClickCounter}>Decrease</button>
+      {/* Render Creature List on DOM */}
+      <CreatureList />
     </div>
     
   );
