@@ -1,8 +1,6 @@
 import { useState } from 'react'
 
 
-
-
 function ClickCounter () {
   const [counter,setCounter] = useState(0)
 //funtion to increase click counter
