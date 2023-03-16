@@ -22,15 +22,18 @@ useEffect(()=> {
     // At this point, React is Ready!
     fetchCreatureList()
 },[]) //!Remember the empty array
+
 const submitForm = (event) => {
     event.preventDefault();
-    axios.post('/creature'), {
+    axios.post('/creature', {
+        //Using values from our var in state
         name: creatureName,
         origin: creatureOrigin,
-    }.then((response)=>{
+    }).then((response)=>{
         //clear out input fields
         setCreatureName('')
         setCreatueOrigin('')
+        // react version of get() after function
         fetchCreatureList()
     }).catch((error)=>{
         console.log(`Error in POST ${error}`)
