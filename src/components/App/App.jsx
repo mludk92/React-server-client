@@ -10,14 +10,24 @@ import InputExample from "../InputExample/InputExample";
 
 function App() {
   // Our functions and variables will go here
-  let firstName = "Mitch";
+  //let firstName = "Mitch";
   //     name    function     default val
-
+  const [headerText, setHeaderText] = useState('Welcome to React!!!')
   return (
     // This looks like HTML but is really JSX
     <div>
-      <Header />
-      <p>Hello World! {firstName}</p>
+      {/**headerTextProp is name of prop
+       * {headerText} is value to be assigned 
+       */}
+      <Header 
+      headerTextProp = {headerText}
+      textColor="brown"
+      />
+      <Header 
+      headerTextProp = {headerText}
+      textColor="gold"
+      />
+      <p>Hello World!?</p>
       <ClickCounter />
       <InputExample/>
       <CreatureList />
