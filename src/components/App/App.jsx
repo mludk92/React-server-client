@@ -23,6 +23,7 @@ function App() {
       headerTextProp = {headerText}
       textColor="brown"
       />
+      <p> just for an example double headers </p>
       <Header 
       headerTextProp = {headerText}
       textColor="gold"
