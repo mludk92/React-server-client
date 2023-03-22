@@ -9,6 +9,11 @@ import CreatureList from "../CreatureList/CreatureList.jsx";
 import InputExample from "../InputExample/InputExample";
 
 function App() {
+
+  const styleObj = {
+    fontSize: 14,
+    color: "#4a54f1",
+    textAlign: "center"}
   // Our functions and variables will go here
   //let firstName = "Mitch";
   //     name    function     default val
@@ -23,7 +28,7 @@ function App() {
       headerTextProp = {headerText}
       textColor="brown"
       />
-      <p> just for an example double headers </p>
+      <p style={styleObj}> just for an example double headers </p>
       <Header 
       headerTextProp = {headerText}
       textColor="gold"
